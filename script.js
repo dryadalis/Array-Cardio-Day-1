@@ -99,3 +99,33 @@ console.table(oldest);
         return obj;
     }, {});
 console.log(transportation);
+
+// 9. Filter Exrrcise
+// Find even number
+ const numbers = [1,12,4,18,9,7,11,3,101,5,6];
+
+ const evenNumbers = numbers.filter(number => number % 2 == 0);
+ console.log("Even numbers: " + evenNumbers);
+
+ const oddNumbers = numbers.filter(number => number % 2 !== 0);
+ console.log("Odd numbers: " + oddNumbers);
+
+ // 9. Filter Exercise:
+ // Find words that include "is"
+
+ const strings = ['this','is','a','collection','of','words'];
+
+ const isIncluded = strings.filter(word => word.indexOf('is') >= 0);
+ console.log(isIncluded);
+
+ // 10. Filter Exercise:
+ //Filter out all values that are greater than 5 
+
+ const greaterThanFive = numbers.filter(number => number > 5);
+ console.log(greaterThanFive);
+
+ //11. Filter Exercise:
+ // Filter name of inventors that include "an"
+
+ const eiIncluede = inventors.filter(word => word.first.indexOf('an') >= 0 || word.last.indexOf('an') >= 0 );
+ console.log(eiIncluede);
