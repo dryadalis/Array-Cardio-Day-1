@@ -129,3 +129,42 @@ console.log(transportation);
 
  const eiIncluede = inventors.filter(word => word.first.indexOf('an') >= 0 || word.last.indexOf('an') >= 0 );
  console.log(eiIncluede);
+
+ //12. Map Exercise : 
+ // Double numbers array :
+ const dubbled = numbers.map(x => x * 2);
+ console.log(dubbled);
+ //13. Map Exercise :
+ // Make numbers strings:
+
+const stringNumbers = numbers.map(number => number.toString());
+console.log(stringNumbers);
+
+// 14. Map Exercise : 
+// Give array of inventors first names
+const firstName = inventors.map(name => name.first);
+console.log(firstName);
+
+//15. Reduce Exercise :
+// Sum up all numbers
+const sumNumbers = numbers.reduce((total, x) => total += x);
+console.log(sumNumbers);
+
+// Multiply all numbers
+const multipledNumbers = numbers.reduce((total, number) => total *= number);
+console.log(multipledNumbers);
+
+// Sort numbers up:
+const sortUp = numbers.sort((a, b) => a - b)
+console.log(sortUp);
+
+// Sort numbers down : 
+const sortDown = numbers.sort((a, b) => b - a);
+console.log(sortDown);
+
+//
+const sortedByLength = strings.sort((a, b) => a.length > b.length ? 1 : -1);
+console.log(sortedByLength);
+
+
+
