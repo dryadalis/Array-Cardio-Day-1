@@ -19,10 +19,8 @@
 
 .container {
   display: flex;
+  border: 10px solid magenta;
+  min-height: 100vh;
+  justify-content: space-between;
 }
-.box {
-    flex: 1;
-}
-.box3 {
-    order: 5;
-}
+
